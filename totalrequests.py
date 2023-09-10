@@ -17,7 +17,7 @@ except FileNotFoundError:
 
 # total time period 
 start_date = datetime(1994, 10, 24)  # October 24, 1994
-end_date = datetime(1995, 10, 11)   # October 11, 1995
+end_date = datetime(1995, 10, 12)   # October 11, 1995
 
 total_requests = 0  # Initialize the variable to hold the count
 
