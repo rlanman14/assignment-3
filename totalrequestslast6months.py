@@ -17,7 +17,7 @@ except FileNotFoundError:
 
 # time period from last 6 months
 start_date = datetime(1995, 4, 11)  # April 11, 1995
-end_date = datetime(1995, 10, 11)   # October 11, 1995
+end_date = datetime(1995, 10, 12)   # October 11, 1995
 
 total_requests_in_6_months = 0  # Initialize the variable to hold the count
 
