@@ -31,6 +31,8 @@ try:
         log_data = file.readlines()
 except FileNotFoundError:
     print(f"The file '{log_file_path}' does not exist or cannot be accessed.")
+    
+print("--------------------------------------------------")
 
 # time period from last 6 months
 start_date = datetime(1995, 4, 11)  # April 11, 1995
@@ -46,8 +48,11 @@ for log_entry in log_data:
     if start_date <= log_date <= end_date:
         total_requests_in_6_months += 1  # Increment the count if it falls within the period
 
+# Decrement the count after the loop
+total_requests_in_6_months -= 1
+
 # Now 'total_requests_in_6_months' contains the total requests made in the 6 months
-print(f"Total requests made in the last 6 months: {total_requests_in_6_months-1}")
+print(f"Total requests made in the last 6 months: {total_requests_in_6_months}")
 
 print("--------------------------------------------------")
 
